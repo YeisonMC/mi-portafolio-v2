@@ -1,11 +1,7 @@
 import { motion, type Variants } from "framer-motion";
-import {
-  FiGithub,
-  FiLinkedin,
-  FiMail,
-  FiDownload,
-  FiArrowRight,
-} from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+
+import { FaArrowRightLong, FaFolderClosed } from "react-icons/fa6";
 
 const HeroSection = () => {
   const containerVariants: Variants = {
@@ -30,6 +26,25 @@ const HeroSection = () => {
       },
     },
   };
+
+  const socialLinks = [
+    {
+      icon: FiGithub,
+      href: "https://github.com/YeisonMC",
+      label: "GitHub",
+    },
+    {
+      icon: FiLinkedin,
+      href: "https://www.linkedin.com/in/yeissen-beckam-macalupu-marchan/",
+      label: "LinkedIn",
+    },
+    {
+      icon: FiMail,
+      href: "mailto:yeissenmacalupu.dev@gmail.com",
+      label: "Email",
+    },
+  ];
+
   return (
     <section className="min-h-screen flex items-center justify-center">
       <div className="section-container">
@@ -73,12 +88,11 @@ const HeroSection = () => {
 
             <motion.p
               variants={itemVariants}
-              className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl"
+              className="text-lg text-gray-600 leading-relaxed max-w-2xl"
             >
               Técnico Superior en Diseño y Desarrollo de Software con 2 años de
               experiencia. Actualmente estudiando Ciencias de la Computación en
-              la UPC. Apasionado por crear experiencias web excepcionales y
-              soluciones innovadoras..
+              la UPC.
             </motion.p>
 
             <motion.div
@@ -87,22 +101,49 @@ const HeroSection = () => {
             >
               <a
                 href="#projects"
-                className="btn-secondary flex items-center gap-2"
+                className="btn-primary flex items-center gap-2"
               >
                 Ver Proyectos
-                <FiArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <FaArrowRightLong className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="CV - YEISSEN MACALUPU - DESARROLLADOR.pdf"
+                href="CV - YEISSEN MACALUPU - DESARROLLADOR - 202502.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary group"
+                className="btn-secondary group"
               >
                 <span className="flex items-center gap-2">
                   Descargar CV
-                  <FiDownload className="w-5 h-5" />
+                  <FaFolderClosed className="w-5 h-5" />
                 </span>
               </a>
+            </motion.div>
+
+            {/* Social Links */}
+            <motion.div
+              variants={itemVariants}
+              className="flex items-center gap-4 pt-2"
+            >
+              <motion.p
+                variants={itemVariants}
+                className="text-sm text-gray-600  leading-relaxed max-w-2xl"
+              >
+                Sigueme en:
+              </motion.p>
+              {socialLinks.map((social, index) => (
+                <motion.a
+                  key={index}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="w-12 h-12 flex items-center justify-center rounded-xl bg-gray-100 dark:bg-dark-800 text-gray-700 dark:text-gray-300 hover:bg-primary-500 hover:text-white dark:hover:bg-primary-500 transition-all duration-300 shadow-md hover:shadow-lg"
+                  aria-label={social.label}
+                >
+                  <social.icon className="w-5 h-5" />
+                </motion.a>
+              ))}
             </motion.div>
           </div>
 

@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #a9725c;
+}
+
 .section-container {
   @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-[#A9725C] text-white font-semibold rounded-xl 
+         transition-all duration-300 
+         hover:scale-105 hover:shadow-lg active:scale-95;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 border-2 border-primary text-primary font-semibold rounded-xl 
+         transition-all duration-300 
+         hover:scale-105 active:scale-95;
 }
