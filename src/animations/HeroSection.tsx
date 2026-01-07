@@ -97,7 +97,7 @@ const HeroSection = () => {
 
             <motion.div
               variants={itemVariants}
-              className="flex flex-wrap gap-4 pt-4"
+              className="flex flex-wrap gap-4 pt-2"
             >
               <a
                 href="#projects"
@@ -136,9 +136,10 @@ const HeroSection = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1, y: -2 }}
+                  whileHover={{ scale: 1.1, y: -8 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-12 h-12 flex items-center justify-center rounded-xl bg-gray-100 dark:bg-dark-800 text-gray-700 dark:text-gray-300 hover:bg-primary-500 hover:text-white dark:hover:bg-primary-500 transition-all duration-300 shadow-md hover:shadow-lg"
+                  transition={{ duration: 0.1 }}
+                  className="w-12 h-12 flex items-center justify-center rounded-xl bg-gray-100 text-gray-700  hover:bg-primary-500 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
                   aria-label={social.label}
                 >
                   <social.icon className="w-5 h-5" />
