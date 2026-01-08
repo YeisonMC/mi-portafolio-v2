@@ -2,6 +2,7 @@ import { motion, type Variants } from "framer-motion";
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
 import { FaArrowRightLong, FaFolderClosed } from "react-icons/fa6";
+import SplineScene from "../components/ui/SplineScene";
 
 const HeroSection = () => {
   const containerVariants: Variants = {
@@ -46,8 +47,9 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="min-h-screen flex items-center justify-center">
-      <div className="section-container">
+    <section className="relative min-h-screen flex items-center justify-center">
+      {/* <SplineScene /> */}
+      <div className="section-container relative z-10 w-full">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -65,14 +67,14 @@ const HeroSection = () => {
                 👋 ¡Hola! Bienvenido a mi portafolio
               </motion.span>
 
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <h1 className="text-white text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
                 Soy <span className="gradient-text">Yeissen Macalupu</span>
               </h1>
             </motion.div>
 
             <motion.h2
               variants={itemVariants}
-              className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-700 dark:text-gray-300"
+              className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-00 dark:text-gray-300"
             >
               Desarrollador{" "}
               <span className="relative inline-block">
