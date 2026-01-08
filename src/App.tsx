@@ -3,8 +3,9 @@ import { Footer } from "./components/layout/Footer";
 import Navbar from "./components/layout/Navbar";
 import { AnimatePresence } from "motion/react";
 import Preloader from "./components/ui/Preloader";
-import SplineScene from "./components/ui/SplineScene";
+
 import Home from "./pages/home/Home";
+import SplineScene from "./components/ui/SplineScene";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);

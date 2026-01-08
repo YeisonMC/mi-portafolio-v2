@@ -48,7 +48,7 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center">
-      {/* <SplineScene /> */}
+      <SplineScene />
       <div className="section-container relative z-10 w-full">
         <motion.div
           variants={containerVariants}
