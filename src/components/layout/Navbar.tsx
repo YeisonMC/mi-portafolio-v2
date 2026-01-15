@@ -6,8 +6,8 @@ const navLinks = [
   { name: "Inicio", id: "home" },
   { name: "Sobre Mi", id: "about" },
   { name: "Experiencia", id: "experience" },
-  { name: "Proyectos", id: "projects" },
   { name: "Habilidades", id: "skills" },
+  { name: "Proyectos", id: "projects" },
   { name: "Contacto", id: "contact" },
 ];
 
@@ -67,7 +67,7 @@ const Navbar = () => {
             : "bg-transparent py-6"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-6   sm:px-8 flex justify-between items-center">
           {/* LOGO - Al hacer click sube al inicio */}
           <button
             onClick={() => scrollToSection("home")}

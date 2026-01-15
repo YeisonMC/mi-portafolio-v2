@@ -1,5 +1,6 @@
 import HeroSection from "../../animations/HeroSection";
 import About from "../about/About";
+import Projects from "../projects/Projects";
 
 const Home = () => {
   return (
@@ -10,6 +11,10 @@ const Home = () => {
 
       <section id="about" className="">
         <About />
+      </section>
+
+      <section id="projects" className="">
+        <Projects />
       </section>
     </>
   );

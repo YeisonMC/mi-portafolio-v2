@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { FiGithub, FiLinkedin, FiMail, FiHeart } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import { MdLocationPin, MdEmail } from "react-icons/md";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -7,12 +8,12 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: FiGithub,
-      href: "https://github.com/yourusername",
+      href: "https://github.com/YeisonMC",
       label: "GitHub",
     },
     {
       icon: FiLinkedin,
-      href: "https://linkedin.com/in/yourusername",
+      href: "https://www.linkedin.com/in/yeissen-beckam-macalupu-marchan/",
       label: "LinkedIn",
     },
     {
@@ -31,7 +32,7 @@ const Footer = () => {
 
   return (
     <footer className="border-t border-gray-200 ">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 md:pt-18 pb-6 sm:pb-2">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 md:pt-18 pb-6 sm:pb-4">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand Section */}
           <div className="space-y-4">
@@ -87,8 +88,8 @@ const Footer = () => {
               Contacto
             </h3>
             <ul className="space-y-3 text-sm">
-              <li className="flex items-start gap-2 text-gray-600 dark:text-gray-400">
-                <FiMail className="w-5 h-5 mt-0.5 shrink-0 text-primary-500" />
+              <li className="flex items-center gap-2 text-gray-600">
+                <MdEmail className="w-5 h-5 mt-0.5 shrink-0 text-primary-500" />
                 <a
                   href="mailto:yeissenmacalupu.dev@gmail.com"
                   className="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
@@ -96,21 +97,21 @@ const Footer = () => {
                   yeissenmacalupu.dev@gmail.com
                 </a>
               </li>
-              <li className="text-gray-600">Lima, Perú 🇵🇪</li>
+              <li className="flex items-center gap-2 text-gray-600">
+                <MdLocationPin className="w-5 h-5 mt-0.5 shrink-0 text-primary-500" />
+                <p>Lima, Perú</p>
+              </li>
             </ul>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-gray-200">
+        <div className="pt-5 border-t border-gray-200">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-600">
             <p className="flex items-center gap-1">
-              © {currentYear} Yeissen Macalupu. Hecho con{" "}
-              <FiHeart className="w-4 h-4 text-red-500 animate-pulse" /> y React
+              © {currentYear} Developed by Yeissen Macalupu
             </p>
-            <p className="text-xs">
-              Diseñado y desarrollado con las últimas tecnologías web
-            </p>
+            <p className="text-xs">Diseñado y desarrollado con vite</p>
           </div>
         </div>
       </div>
