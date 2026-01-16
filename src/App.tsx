@@ -1,13 +1,13 @@
 import Footer from "./components/layout/Footer";
 import Navbar from "./components/layout/Navbar";
-import { AppRouter } from "./routes/AppRouter";
+import Home from "./pages/home/Home";
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-1">
-        <AppRouter />
+        <Home />
       </main>
       <Footer />
     </div>

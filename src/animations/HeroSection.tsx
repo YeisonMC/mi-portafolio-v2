@@ -72,7 +72,7 @@ const HeroSection = () => {
 
             <motion.h2
               variants={itemVariants}
-              className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-700 dark:text-gray-300"
+              className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-700"
             >
               Desarrollador{" "}
               <span className="relative inline-block">
