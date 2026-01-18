@@ -41,9 +41,9 @@ const Footer = () => {
                 Yeissen Macalupu
               </span>
             </motion.div>
-            <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-              Desarrollador FullStack apasionado por crear experiencias web
-              excepcionales y soluciones innovadoras.
+            <p className="text-gray-600 text-sm leading-relaxed max-w-2/3">
+              Ingeniero de Ciencias de la Computación especializado en diseño y
+              desarrollo web.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => (

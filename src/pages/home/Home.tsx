@@ -1,5 +1,6 @@
 import HeroSection from "../../animations/HeroSection";
 import About from "../about/About";
+import Experience from "../experience/Experience";
 import Projects from "../projects/Projects";
 
 const Home = () => {
@@ -11,6 +12,10 @@ const Home = () => {
 
       <section id="about" className="">
         <About />
+      </section>
+
+      <section id="experience" className="">
+        <Experience />
       </section>
 
       <section id="projects" className="">
