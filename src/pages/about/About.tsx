@@ -83,7 +83,7 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen py-20">
+    <div className="min-h-screen">
       <div className="section-container">
         {/* Header */}
         <motion.div

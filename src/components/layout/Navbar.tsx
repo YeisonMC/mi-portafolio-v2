@@ -8,7 +8,7 @@ const navLinks = [
   { name: "Experiencia", id: "experience" },
   { name: "Habilidades", id: "skills" },
   { name: "Proyectos", id: "projects" },
-  { name: "Contacto", id: "contact" },
+  // { name: "Contacto", id: "contact" },
 ];
 
 const Navbar = () => {
@@ -82,7 +82,7 @@ const Navbar = () => {
           </button>
 
           {/* DESKTOP MENU */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => {
               const isActive = activeSection === link.id;
 
@@ -112,18 +112,6 @@ const Navbar = () => {
               );
             })}
           </div>
-
-          {/* BOTÓN CONTACTO */}
-          {/* <div className="hidden md:block">
-            <button
-              onClick={() => scrollToSection("contact")} // Asumiendo que tendrás una sección de contacto al final
-              className="px-5 py-2 rounded-full border border-white/20 text-white text-sm hover:bg-white hover:text-slate-900 transition-all cursor-pointer"
-            >
-              Contactar
-            </button>
-          </div> */}
-
-          {/* MOBILE TOGGLE */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden text-black text-2xl z-50 cursor-pointer"
@@ -141,7 +129,7 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "tween" }}
-            className="fixed inset-0 bg-slate-950 z-40 flex flex-col items-center justify-center gap-8 md:hidden"
+            className="fixed inset-0 bg-amber-100 z-40 flex flex-col items-center justify-center gap-8 md:hidden"
           >
             {navLinks.map((link) => (
               <button

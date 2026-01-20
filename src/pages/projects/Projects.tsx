@@ -60,7 +60,8 @@ const Projects = () => {
   ];
 
   return (
-    <div className="min-h-screen py-20">
+    //  py-20
+    <div className="min-h-screen">
       <div className="section-container">
         {/* Header Section */}
         <motion.div
