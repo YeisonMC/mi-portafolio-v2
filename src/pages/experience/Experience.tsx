@@ -53,7 +53,6 @@ const Experience = () => {
   return (
     <div className="min-h-screen">
       <div className="section-container">
-        {" "}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -85,13 +84,13 @@ const Experience = () => {
             >
               {/* Timeline Line */}
               {index !== experiences.length - 1 && (
-                <div className="absolute left-6 top-20 bottom-0 w-0.5 bg-gradient-to-b from-gray-300 to-transparent dark:from-gray-700" />
+                <div className="absolute left-6 top-20 bottom-0 w-0.5 bg-[#dbcdc8] from-gray-300 to-transparent dark:from-gray-700" />
               )}
 
               <div className="flex gap-6">
                 {/* Icon */}
                 <div
-                  className={`flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br  flex items-center justify-center shadow-lg`}
+                  className={`shrink-0 w-12 h-12 rounded-xl bg-[#A9725C] flex items-center justify-center shadow-lg`}
                 >
                   <FiBriefcase className="w-6 h-6 text-white" />
                 </div>
