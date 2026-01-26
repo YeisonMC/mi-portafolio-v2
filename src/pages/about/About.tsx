@@ -101,7 +101,7 @@ const About = () => {
           </motion.h1>
           <motion.p
             variants={itemVariants}
-            className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto"
+            className="text-xl text-gray-600 max-w-3xl mx-auto"
           >
             Conoce más sobre mi trayectoria, valores y lo que me apasiona en el
             mundo del desarrollo.
@@ -118,17 +118,15 @@ const About = () => {
             viewport={{ once: true, margin: "-50px" }}
             className="space-y-6"
           >
-            <div className="bg-white dark:bg-dark-800 rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-dark-700">
-              <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+              <h2 className="text-3xl font-bold mb-6 text-gray-900">
                 ¡Hola! 👋
               </h2>
 
-              <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+              <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
                   Soy{" "}
-                  <strong className="text-primary-600 dark:text-primary-400">
-                    Yeissen Macalupu
-                  </strong>
+                  <strong className="text-primary-600">Yeissen Macalupu</strong>
                   , un desarrollador FullStack apasionado por crear experiencias
                   web excepcionales. Con 2 años de experiencia en el mercado TI,
                   me especializo tanto en el desarrollo Frontend como Backend.
@@ -174,9 +172,9 @@ const About = () => {
             viewport={{ once: true, margin: "-50px" }}
             className="space-y-6"
           >
-            <div className="bg-gradient-to-br from-primary-50 to-accent-50 dark:from-primary-900/20 dark:to-accent-900/20 rounded-2xl p-8 border border-primary-200 dark:border-primary-800">
-              <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white flex items-center gap-2">
-                <FiCoffee className="text-primary-600 dark:text-primary-400" />
+            <div className="bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl p-8 border border-primary-200">
+              <h3 className="text-2xl font-bold mb-6 text-gray-900 flex items-center gap-2">
+                <FiCoffee className="text-primary-600" />
                 Intereses
               </h3>
 
@@ -195,7 +193,7 @@ const About = () => {
                     className="flex items-center gap-3 p-3 bg-white dark:bg-dark-800 rounded-xl shadow-sm"
                   >
                     <span className="text-2xl">{interest.icon}</span>
-                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                    <span className="text-sm font-medium text-gray-700">
                       {interest.name}
                     </span>
                   </motion.div>
@@ -204,52 +202,6 @@ const About = () => {
             </div>
           </motion.div>
         </div>
-
-        {/* Timeline */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-        >
-          <motion.h2
-            variants={itemVariants}
-            className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white"
-          >
-            Mi <span className="gradient-text">Trayectoria</span>
-          </motion.h2>
-
-          <div className="max-w-3xl mx-auto space-y-8">
-            {timeline.map((item) => (
-              <motion.div
-                key={item.year}
-                variants={itemVariants}
-                className="relative pl-8 border-l-2 border-primary-300 dark:border-primary-700"
-              >
-                <div className="absolute -left-3 top-0 w-6 h-6 rounded-full bg-gradient-to-br from-primary-500 to-accent-500 shadow-lg" />
-
-                <div className="bg-white dark:bg-dark-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-dark-700">
-                  <div className="flex items-center gap-3 mb-2">
-                    <span className="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 rounded-full text-sm font-bold">
-                      {item.year}
-                    </span>
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-                      {item.title}
-                    </h3>
-                  </div>
-
-                  <p className="text-primary-600 dark:text-primary-400 font-semibold mb-2">
-                    {item.organization}
-                  </p>
-
-                  <p className="text-gray-600 dark:text-gray-400">
-                    {item.description}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
       </div>
     </div>
   );
