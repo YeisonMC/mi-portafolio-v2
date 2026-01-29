@@ -10,19 +10,15 @@ const Home = () => {
       <section id="home" className="overflow-hidden">
         <HeroSection />
       </section>
-
       <section id="about">
         <About />
       </section>
-
       <section id="experience">
         <Experience />
       </section>
-
       <section id="skills">
         <Skills />
       </section>
-
       <section id="projects">
         <Projects />
       </section>

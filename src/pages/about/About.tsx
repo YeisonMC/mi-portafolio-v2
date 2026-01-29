@@ -59,29 +59,6 @@ const About = () => {
     { icon: "✈️", name: "Viajar" },
   ];
 
-  const timeline = [
-    {
-      year: "2024",
-      title: "Estudiante de Ciencias de la Computación",
-      organization: "Universidad de Ciencias Aplicadas (UPC)",
-      description:
-        "Profundizando conocimientos en algoritmos, estructuras de datos y arquitectura de software.",
-    },
-    {
-      year: "2022",
-      title: "Desarrollador FullStack",
-      organization: "Mercado TI",
-      description:
-        "2 años de experiencia desarrollando aplicaciones web completas y escalables.",
-    },
-    {
-      year: "2021",
-      title: "Técnico Superior",
-      organization: "CERTUS",
-      description: "Graduado en Diseño y Desarrollo de Software con honores.",
-    },
-  ];
-
   return (
     <div className="min-h-screen">
       <div className="section-container">
@@ -95,7 +72,7 @@ const About = () => {
         >
           <motion.h1
             variants={itemVariants}
-            className="text-5xl md:text-6xl font-bold mb-6"
+            className="text-3xl md:text-5xl font-bold mb-6"
           >
             Sobre <span className="gradient-text">Mí</span>
           </motion.h1>

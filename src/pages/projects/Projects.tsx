@@ -28,9 +28,9 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Moda Market - Ecommerce",
       description:
-        "Plataforma de comercio electrónico completa con carrito de compras, pasarela de pagos y panel de administración.",
+        "Plataforma E-commerce para ropa de moda con catálogo dinámico, filtros por categoría, búsqueda de productos y diseño responsive.",
       image:
         "https://res.cloudinary.com/dtsfiwmzt/image/upload/v1768582339/Moda-Market_003_ixytco.jpg",
       technologies: ["Vite", "React", "Tailwind CSS"],
@@ -172,7 +172,7 @@ const Projects = () => {
                 </h3>
 
                 {/* Project Description */}
-                <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 min-h-[3rem]">
+                <p className="text-gray-600 text-sm mb-4 min-h-[3rem]">
                   {project.description}
                 </p>
 
@@ -181,8 +181,14 @@ const Projects = () => {
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 text-xs font-medium bg-gray-100 dark:bg-dark-700 text-gray-700 dark:text-gray-300 rounded-full hover:bg-primary-100 dark:hover:bg-primary-900/30 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                      className="px-3 py-1 text-xs font-medium bg-gray-100 text-gray-700 rounded-full hover:bg-primary-100 hover:text-primary-600 transition-colors"
+                      // flex items-center gap-x-1
                     >
+                      {/* <img
+                        src="https://res.cloudinary.com/dtsfiwmzt/image/upload/v1769645700/vite_kuse9u.svg"
+                        alt=""
+                        className="size-3.5"
+                      /> */}
                       {tech}
                     </span>
                   ))}
