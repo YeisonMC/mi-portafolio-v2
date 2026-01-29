@@ -1,5 +1,4 @@
 import { motion, type Variants } from "framer-motion";
-import { FiCoffee } from "react-icons/fi";
 
 const About = () => {
   // Variants consistentes con HeroSection
@@ -50,13 +49,22 @@ const About = () => {
     },
   };
 
-  const interests = [
-    { icon: "💻", name: "Programación" },
-    { icon: "🎨", name: "Diseño UI/UX" },
-    { icon: "📚", name: "Lectura Técnica" },
-    { icon: "🎮", name: "Gaming" },
-    { icon: "🎵", name: "Música" },
-    { icon: "✈️", name: "Viajar" },
+  const certifications = [
+    {
+      icon: "☁️",
+      name: "AWS Certified",
+      description: "Cloud Computing & Servicios en la Nube",
+    },
+    {
+      icon: "🌐",
+      name: "Cisco Certified",
+      description: "Networking & Infraestructura",
+    },
+    {
+      icon: "⚡",
+      name: "Automatización n8n",
+      description: "Integración & Workflow Automation",
+    },
   ];
 
   return (
@@ -96,17 +104,12 @@ const About = () => {
             className="space-y-6"
           >
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">
-                ¡Hola! 👋
-              </h2>
-
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Soy{" "}
-                  <strong className="text-primary-600">Yeissen Macalupu</strong>
-                  , un desarrollador FullStack apasionado por crear experiencias
-                  web excepcionales. Con 2 años de experiencia en el mercado TI,
-                  me especializo tanto en el desarrollo Frontend como Backend.
+                  Soy, un desarrollador FullStack apasionado por crear
+                  experiencias web excepcionales. Con 2 años de experiencia en
+                  el mercado TI, me especializo tanto en el desarrollo Frontend
+                  como Backend.
                 </p>
 
                 <p>
@@ -114,9 +117,7 @@ const About = () => {
                   <strong className="text-gray-900 dark:text-white">
                     Ciencias de la Computación
                   </strong>{" "}
-                  en la Universidad de Ciencias Aplicadas (UPC), donde
-                  profundizo mis conocimientos en algoritmos, estructuras de
-                  datos y arquitectura de software.
+                  en la Universidad de Ciencias Aplicadas (UPC),
                 </p>
 
                 <p>
@@ -149,36 +150,93 @@ const About = () => {
             viewport={{ once: true, margin: "-50px" }}
             className="space-y-6"
           >
-            <div className="bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl p-8 border border-primary-200">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
               <h3 className="text-2xl font-bold mb-6 text-gray-900 flex items-center gap-2">
-                <FiCoffee className="text-primary-600" />
-                Intereses
+                📋 Información
               </h3>
 
-              <motion.div
-                variants={containerVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                className="grid grid-cols-2 gap-4"
-              >
-                {interests.map((interest) => (
-                  <motion.div
-                    key={interest.name}
-                    variants={itemVariants}
-                    whileHover={{ scale: 1.05 }}
-                    className="flex items-center gap-3 p-3 bg-white dark:bg-dark-800 rounded-xl shadow-sm"
-                  >
-                    <span className="text-2xl">{interest.icon}</span>
-                    <span className="text-sm font-medium text-gray-700">
-                      {interest.name}
-                    </span>
-                  </motion.div>
-                ))}
-              </motion.div>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center pb-4 border-b border-gray-100">
+                  <span className="text-sm text-gray-500 font-medium">
+                    Ubicación
+                  </span>
+                  <span className="text-gray-900 font-semibold">
+                    Lima, Perú
+                  </span>
+                </div>
+
+                <div className="flex justify-between items-center pb-4 border-b border-gray-100">
+                  <span className="text-sm text-gray-500 font-medium">
+                    Universidad
+                  </span>
+                  <span className="text-gray-900 font-semibold">UPC</span>
+                </div>
+
+                <div className="flex justify-between items-center pb-4 border-b border-gray-100">
+                  <span className="text-sm text-gray-500 font-medium">
+                    Carrera
+                  </span>
+                  <span className="text-gray-900 font-semibold">
+                    Computación
+                  </span>
+                </div>
+
+                <div className="flex justify-between items-center pb-4 border-b border-gray-100">
+                  <span className="text-sm text-gray-500 font-medium">
+                    Experiencia
+                  </span>
+                  <span className="text-gray-900 font-semibold">2 años</span>
+                </div>
+
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-gray-500 font-medium">
+                    Idiomas
+                  </span>
+                  <span className="text-gray-900 font-semibold">ES / EN</span>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
+
+        {/* Certifications Section */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="mt-20"
+        >
+          {/* Section Header */}
+
+          <motion.h2
+            variants={itemVariants}
+            className="text-3xl md:text-4xl font-bold text-gray-900 mb-12"
+          >
+            Certificaciones
+          </motion.h2>
+
+          {/* Certifications Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {certifications.map((cert, index) => (
+              <motion.div
+                variants={itemVariants}
+                key={index}
+                whileHover={{ y: -8, transition: { duration: 0.2 } }}
+                className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 text-center group cursor-pointer relative overflow-hidden"
+              >
+                {/* Animated top border */}
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-500 to-accent-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+
+                <div className="text-5xl mb-4">{cert.icon}</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  {cert.name}
+                </h3>
+                <p className="text-gray-600 text-sm">{cert.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </div>
   );
