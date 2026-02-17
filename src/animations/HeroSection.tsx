@@ -3,6 +3,11 @@ import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
 import { FaArrowRightLong, FaFolderClosed } from "react-icons/fa6";
 
+import "@fontsource/raleway/400.css";
+import "@fontsource/raleway/500.css";
+import "@fontsource/raleway/600.css";
+import "@fontsource/raleway/700.css";
+
 const HeroSection = () => {
   const containerVariants: Variants = {
     hidden: { opacity: 0 },

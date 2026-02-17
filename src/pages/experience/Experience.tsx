@@ -4,6 +4,22 @@ import { FiBriefcase, FiCalendar } from "react-icons/fi";
 const Experience = () => {
   const experiences = [
     {
+      title: "Freelancer | Desarrollador FullStack",
+      company: "Proyectos Independientes",
+      period: "2025",
+
+      description:
+        // "2 años de experiencia desarrollando aplicaciones web completas y escalables.",
+        "Desarrollo diversos proyectos, incluyendo landing pages, aplicaciones web y sistemas web.",
+      technologies: [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "PostgreSQL",
+        "Tailwind CSS",
+      ],
+    },
+    {
       title: "Estudiante de Ciencias de la Computación",
       company: "Universidad de Ciencias Aplicadas (UPC)",
       period: "2024 - Presente",
@@ -19,9 +35,9 @@ const Experience = () => {
       ],
     },
     {
-      title: "Freelancer | Desarrollador FullStack",
-      company: "Proyectos Independientes",
-      period: "2023",
+      title: "Desarrollador Frontend",
+      company: "Centro GZA InfraVial Perú",
+      period: "Marzo - Junio | 2023",
 
       description:
         // "2 años de experiencia desarrollando aplicaciones web completas y escalables.",

@@ -226,7 +226,7 @@ const About = () => {
                 className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 text-center group cursor-pointer relative overflow-hidden"
               >
                 {/* Animated top border */}
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-500 to-accent-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-primary-500 to-accent-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
 
                 <div className="text-5xl mb-4">{cert.icon}</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
