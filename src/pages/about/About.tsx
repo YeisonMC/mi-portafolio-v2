@@ -76,20 +76,19 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="text-center mb-16"
+          className="text-center md:mb-12 mb-6"
         >
-          <motion.h1
+          <motion.h2
             variants={itemVariants}
-            className="text-3xl md:text-5xl font-bold mb-6"
+            className="text-4xl md:text-5xl font-bold mb-4"
           >
-            Sobre <span className="gradient-text">Mí</span>
-          </motion.h1>
-          <motion.p
-            variants={itemVariants}
-            className="text-xl text-gray-600 max-w-3xl mx-auto"
-          >
-            Conoce más sobre mi trayectoria, valores y lo que me apasiona en el
-            mundo del desarrollo.
+            Sobre{" "}
+            <span className="bg-linear-to-r from-[#A9725C] to-[#C89580] text-transparent bg-clip-text">
+              Mí
+            </span>
+          </motion.h2>
+          <motion.p variants={itemVariants} className="text-gray-600 uppercase">
+            Más sobre mi trayectoria
           </motion.p>
         </motion.div>
 

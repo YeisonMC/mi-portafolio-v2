@@ -18,7 +18,7 @@ const Skills = () => {
     },
     {
       name: "JavaScript",
-      category: "Programación Web",
+      category: "Desarrollo Web",
       icon: "https://res.cloudinary.com/dtsfiwmzt/image/upload/v1770251584/js_bblpm3.svg",
       color: "from-[#A9725C] to-[#D4A996]",
     },
@@ -53,7 +53,7 @@ const Skills = () => {
       color: "from-[#8B5E4A] to-[#C89580]",
     },
     {
-      name: "Spring boot",
+      name: "Spring",
       category: "Backend Web",
       icon: "https://res.cloudinary.com/dtsfiwmzt/image/upload/v1771276925/spring-boot_l6rv0l.svg",
       color: "from-[#8B5E4A] to-[#C89580]",
@@ -124,7 +124,7 @@ const Skills = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="text-center md:mb-12 mb-6"
         >
           <motion.h2
             className="text-4xl md:text-5xl font-bold mb-4"
@@ -184,16 +184,16 @@ const Skills = () => {
                   {/* Icon Container */}
                   <img
                     src={skill.icon}
-                    className="w-20 h-20 mx-auto ransform group-hover:scale-110 transition-transform duration-300"
+                    className="w-18 h-18 mx-auto ransform group-hover:scale-110 transition-transform duration-300"
                     alt={`${skill.name}-icon`}
                   />
 
                   {/* Content */}
                   <div className="relative text-center">
-                    <h4 className="text-xl font-bold text-gray-800 dark:text-white mb-2">
+                    <h4 className="text-xl font-bold text-gray-800 mb-2">
                       {skill.name}
                     </h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                    <p className="text-[13px] text-gray-600">
                       {skill.category}
                     </p>
                   </div>
@@ -246,13 +246,11 @@ const Skills = () => {
                 <div className="relative bg-white  rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 h-full">
                   {/* Icon */}
                   <div
-                    className={`w-16 h-16 mb-6  transform group-hover:rotate-6 transition-transform duration-300`}
+                    className={`w-15 h-15 mb-4 transform group-hover:rotate-6 transition-transform duration-300`}
                     // className={`w-16 h-16 rounded-2xl bg-linear-to-br ${skill.color} flex items-center justify-center text-white mb-6 shadow-lg transform group-hover:rotate-6 transition-transform duration-300`}
                   >
-                    {/* {skill.icon} */}
                     <img src={skill.icon} alt={`${skill.name}-icon`} />
                   </div>
-
                   {/* Content */}
                   <h4 className="text-2xl font-bold text-gray-800 dark:text-white mb-3">
                     {skill.name}
