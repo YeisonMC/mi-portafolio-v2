@@ -73,7 +73,7 @@ const Footer = () => {
                 <li key={link.path}>
                   <a
                     href={link.path}
-                    className="text-gray-600 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-200 text-sm"
+                    className="text-gray-600 hover:text-primary-500 transition-colors duration-200 text-sm"
                   >
                     {link.name}
                   </a>
@@ -84,7 +84,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">
+            <h3 className="text-lg font-semibold mb-4 text-gray-900">
               Contacto
             </h3>
             <ul className="space-y-3 text-sm">
@@ -92,7 +92,7 @@ const Footer = () => {
                 <MdEmail className="w-5 h-5 mt-0.5 shrink-0 text-primary-500" />
                 <a
                   href="mailto:yeissenmacalupu.dev@gmail.com"
-                  className="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                  className="hover:text-primary-500 transition-colors"
                 >
                   yeissenmacalupu.dev@gmail.com
                 </a>

@@ -4,21 +4,29 @@ import { FiBriefcase, FiCalendar } from "react-icons/fi";
 const Experience = () => {
   const experiences = [
     {
-      title: "Freelancer | Desarrollador FullStack",
-      company: "Proyectos Independientes",
-      period: "2025",
-
+      title: "Asistente de Software",
+      company: "Green Dreams",
+      period: "2026",
       description:
-        // "2 años de experiencia desarrollando aplicaciones web completas y escalables.",
         "Desarrollo diversos proyectos, incluyendo landing pages, aplicaciones web y sistemas web.",
-      technologies: [
-        "React",
-        "Node.js",
-        "MongoDB",
-        "PostgreSQL",
-        "Tailwind CSS",
-      ],
+      technologies: ["React", "Node.js", "Express", "MongoDB"],
     },
+    // {
+    //   title: "Freelancer | Desarrollador FullStack",
+    //   company: "Proyectos Independientes",
+    //   period: "2025",
+
+    //   description:
+    //     // "2 años de experiencia desarrollando aplicaciones web completas y escalables.",
+    //     "Desarrollo diversos proyectos, incluyendo landing pages, aplicaciones web y sistemas web.",
+    //   technologies: [
+    //     "React",
+    //     "Node.js",
+    //     "MongoDB",
+    //     "PostgreSQL",
+    //     "Tailwind CSS",
+    //   ],
+    // },
     {
       title: "Estudiante de Ciencias de la Computación",
       company: "Universidad de Ciencias Aplicadas (UPC)",
@@ -100,15 +108,22 @@ const Experience = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center md:mb-12 mb-6"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Experiencia <span className="gradient-text">Profesional</span>
-          </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          <motion.h2
+            variants={itemVariants}
+            className="text-4xl md:text-5xl font-bold mb-4"
+          >
+            Experiencia{" "}
+            <span className="bg-linear-to-r from-[#A9725C] to-[#C89580] text-transparent bg-clip-text">
+              Profesional
+            </span>
+          </motion.h2>
+
+          <motion.p variants={itemVariants} className="text-gray-600 uppercase">
             Mi trayectoria en el desarrollo de software y las tecnologías que
             domino
-          </p>
+          </motion.p>
         </motion.div>
         <motion.div
           // variants={containerVariants}

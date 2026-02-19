@@ -159,7 +159,7 @@ const Skills = () => {
         >
           <motion.h3
             variants={itemVariants}
-            className="text-3xl font-bold text-gray-800 dark:text-white mb-8 flex items-center gap-2"
+            className="text-3xl font-bold text-gray-800 mb-8 flex items-center gap-2"
           >
             <FaCode className="w-8 h-8 text-[#A9725C]" />
             Desarrollo
@@ -200,7 +200,7 @@ const Skills = () => {
 
                   {/* Progress Bar */}
                   {/* <motion.div
-                    className="relative mt-4 h-1 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden"
+                    className="relative mt-4 h-1 bg-gray-200 rounded-full overflow-hidden"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
@@ -252,10 +252,10 @@ const Skills = () => {
                     <img src={skill.icon} alt={`${skill.name}-icon`} />
                   </div>
                   {/* Content */}
-                  <h4 className="text-2xl font-bold text-gray-800 dark:text-white mb-3">
+                  <h4 className="text-2xl font-bold text-gray-800 mb-3">
                     {skill.name}
                   </h4>
-                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed">
                     {skill.description}
                   </p>
 

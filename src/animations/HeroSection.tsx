@@ -70,14 +70,14 @@ const HeroSection = () => {
                 👋 ¡Hola! Bienvenido a mi portafolio
               </motion.span>
 
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Soy <span className="gradient-text">Yeissen Macalupu</span>
               </h1>
             </motion.div>
 
             <motion.h2
               variants={itemVariants}
-              className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-700"
+              className="text-2xl md:text-2xl lg:text-3xl font-semibold text-gray-700"
             >
               Desarrollador{" "}
               <span className="relative inline-block">
@@ -93,7 +93,7 @@ const HeroSection = () => {
 
             <motion.p
               variants={itemVariants}
-              className="text-lg text-gray-600 leading-relaxed max-w-2xl"
+              className="text-lg text-gray-600 leading-relaxed max-w-2xl text-justify"
             >
               Técnico Superior en Diseño y Desarrollo de Software con 2 años de
               experiencia. Actualmente estudiando Ciencias de la Computación en

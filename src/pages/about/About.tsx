@@ -113,7 +113,7 @@ const About = () => {
 
                 <p>
                   Actualmente curso la carrera de{" "}
-                  <strong className="text-gray-900 dark:text-white">
+                  <strong className="text-gray-900">
                     Ciencias de la Computación
                   </strong>{" "}
                   en la Universidad de Ciencias Aplicadas (UPC),
@@ -121,18 +121,16 @@ const About = () => {
 
                 <p>
                   Me considero una persona{" "}
-                  <strong className="text-gray-900 dark:text-white">
-                    autodidacta
-                  </strong>{" "}
-                  que busca estar aprendiendo constantemente. Disfruto
-                  enfrentarme a nuevos desafíos y encontrar soluciones
-                  innovadoras a problemas complejos.
+                  <strong className="text-gray-900">autodidacta</strong> que
+                  busca estar aprendiendo constantemente. Disfruto enfrentarme a
+                  nuevos desafíos y encontrar soluciones innovadoras a problemas
+                  complejos.
                 </p>
 
                 <p>
                   Busco nuevas oportunidades en el mercado TI que me permitan no
                   solo aportar mi conocimiento y habilidades, sino también{" "}
-                  <strong className="text-gray-900 dark:text-white">
+                  <strong className="text-gray-900">
                     crecer profesional y personalmente
                   </strong>
                   .
