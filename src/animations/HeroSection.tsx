@@ -131,7 +131,7 @@ const HeroSection = () => {
             >
               <motion.p
                 variants={itemVariants}
-                className="text-sm text-gray-600  leading-relaxed max-w-2xl"
+                className="text-sm text-gray-600 leading-relaxed max-w-2xl"
               >
                 Sigueme en:
               </motion.p>
@@ -144,7 +144,7 @@ const HeroSection = () => {
                   whileHover={{ scale: 1.1, y: -8 }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ duration: 0.1 }}
-                  className="w-12 h-12 flex items-center justify-center rounded-xl bg-gray-100 text-gray-700  hover:bg-primary-500 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
+                  className="w-12 h-12 flex items-center justify-center rounded-xl bg-gray-100 text-gray-700 hover:bg-[#A9725C] hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
                   aria-label={social.label}
                 >
                   <social.icon className="w-5 h-5" />

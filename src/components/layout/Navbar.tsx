@@ -2,6 +2,11 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi";
 
+import "@fontsource/raleway/400.css";
+import "@fontsource/raleway/500.css";
+import "@fontsource/raleway/600.css";
+import "@fontsource/raleway/700.css";
+
 const navLinks = [
   { name: "Inicio", id: "home" },
   { name: "Sobre Mi", id: "about" },
@@ -38,6 +43,13 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = isMobileMenuOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMobileMenuOpen]);
+
   const scrollToSection = (id: string) => {
     setIsMobileMenuOpen(false); // Cerrar menú móvil si está abierto
     const element = document.getElementById(id);
@@ -62,10 +74,8 @@ const Navbar = () => {
         transition={{ duration: 0.5 }}
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           isScrolled
-            ? // bg-slate-950/80
-              "bg-white border-b border-white/10 py-4 shadow-lg"
-            : // "backdrop-blur-md border-b border-white/10 py-4 shadow-lg"
-              "bg-transparent py-4"
+            ? "bg-white border-b border-white/10 py-4 shadow-lg"
+            : "bg-transparent py-4"
         }`}
       >
         <div className="max-w-6xl mx-auto px-6 sm:px-8 flex justify-between items-center">
@@ -85,13 +95,14 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => {
               const isActive = activeSection === link.id;
-
               return (
                 <button
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
-                  className={`relative px-1 py-2 text-sm font-medium transition-colors cursor-pointer ${
-                    isActive ? "text-primary" : "text-black hover:text-primary"
+                  className={`relative px-1 py-2 text-sm font-semibold transition-colors cursor-pointer font-[Raleway] ${
+                    isActive
+                      ? "text-[#A9725C]"
+                      : "text-black hover:text-[#A9725C]"
                   }`}
                 >
                   {link.name}
@@ -100,7 +111,8 @@ const Navbar = () => {
                   {isActive && (
                     <motion.div
                       layoutId="navbar-underline"
-                      className="absolute left-0 right-0 bottom-0 h-0.5 bg-orange-500 shadow-[0_0_10px_rgba(249,115,22,0.5)]"
+                      className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#A9725C] shadow-[0_0_10px_rgba(249,115,22,0.5)]"
+                      // "shadow-[0_0_10px_rgba(169,114,92,0.4)]"
                       transition={{
                         type: "spring",
                         stiffness: 300,
@@ -135,8 +147,8 @@ const Navbar = () => {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className={`text-2xl font-semibold cursor-pointer ${
-                  activeSection === link.id ? "text-orange-500" : "text-black"
+                className={`text-2xl font-semibold font-[Raleway] cursor-pointer ${
+                  activeSection === link.id ? "text-[#A9725C]" : "text-black"
                 }`}
               >
                 {link.name}

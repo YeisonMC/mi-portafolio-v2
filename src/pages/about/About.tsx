@@ -51,17 +51,18 @@ const About = () => {
 
   const certifications = [
     {
-      icon: "👨‍💻",
+      // icon: "👨‍💻",
+      icon: "https://res.cloudinary.com/dtsfiwmzt/image/upload/v1771708740/code2_fobq1b.svg",
       name: "Desarrollo de Software",
       description: "Certificado Modular - Programa de Diseño y Desarrollo",
     },
     {
-      icon: "🌐",
+      icon: "https://res.cloudinary.com/dtsfiwmzt/image/upload/v1771708740/team_usuan2.svg",
       name: "Scrum Fundamentals",
       description: "Metodologías Ágiles & Gestión de Proyectos",
     },
     {
-      icon: "⚡",
+      icon: "https://res.cloudinary.com/dtsfiwmzt/image/upload/v1771708740/business_zmde3s.svg",
       name: "Semifinalista Ideatón",
       description: "5ta Edición Ideatón - Concurso de Ideas Innovadoras",
     },
@@ -195,20 +196,17 @@ const About = () => {
             </div>
           </motion.div>
         </div>
-
         {/* Certifications Section */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="mt-20"
         >
           {/* Section Header */}
-
           <motion.h2
             variants={itemVariants}
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-12"
+            className="text-3xl md:text-4xl font-bold text-gray-900 mb-10"
           >
             Certificaciones
           </motion.h2>
@@ -219,13 +217,15 @@ const About = () => {
               <motion.div
                 variants={itemVariants}
                 key={index}
-                whileHover={{ y: -8, transition: { duration: 0.2 } }}
-                className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 text-center group cursor-pointer relative overflow-hidden"
+                whileHover={{
+                  y: -10,
+                  transition: { type: "spring", stiffness: 300 },
+                }}
+                className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 text-center cursor-pointer"
               >
-                {/* Animated top border */}
-                <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-primary-500 to-accent-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-
-                <div className="text-5xl mb-4">{cert.icon}</div>
+                <div className="text-5xl mb-4">
+                  <img src={cert.icon} alt="" className="w-22 h-22 mx-auto" />
+                </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   {cert.name}
                 </h3>

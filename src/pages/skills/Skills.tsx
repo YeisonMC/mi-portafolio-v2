@@ -183,7 +183,7 @@ const Skills = () => {
                   {/* Icon Container */}
                   <img
                     src={skill.icon}
-                    className="w-18 h-18 mx-auto ransform group-hover:scale-110 transition-transform duration-300"
+                    className="w-18 h-18 mx-auto transform group-hover:scale-110 transition-transform duration-300"
                     alt={`${skill.name}-icon`}
                   />
 
