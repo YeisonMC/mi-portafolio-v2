@@ -51,19 +51,19 @@ const About = () => {
 
   const certifications = [
     {
-      icon: "☁️",
-      name: "AWS Certified",
-      description: "Cloud Computing & Servicios en la Nube",
+      icon: "👨‍💻",
+      name: "Desarrollo de Software",
+      description: "Certificado Modular - Programa de Diseño y Desarrollo",
     },
     {
       icon: "🌐",
-      name: "Cisco Certified",
-      description: "Networking & Infraestructura",
+      name: "Scrum Fundamentals",
+      description: "Metodologías Ágiles & Gestión de Proyectos",
     },
     {
       icon: "⚡",
-      name: "Automatización n8n",
-      description: "Integración & Workflow Automation",
+      name: "Semifinalista Ideatón",
+      description: "5ta Edición Ideatón - Concurso de Ideas Innovadoras",
     },
   ];
 

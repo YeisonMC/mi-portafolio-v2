@@ -8,16 +8,15 @@ const Experience = () => {
       company: "Green Dreams",
       period: "2026",
       description:
-        "Desarrollo diversos proyectos, incluyendo landing pages, aplicaciones web y sistemas web.",
+        "Colaboré en el desarrollo y mantenimiento de aplicaciones web fullstack, trabajando con React, Node.js, Express y MongoDB (MERN) y rediseñando sitios en WordPress con Elementor.",
       technologies: ["React", "Node.js", "Express", "MongoDB", "WordPress"],
     },
     {
       title: "Estudiante de Ciencias de la Computación",
       company: "Universidad de Ciencias Aplicadas (UPC)",
       period: "2024 - Presente",
-
       description:
-        "Profundizando conocimientos en algoritmos, estructuras de datos y arquitectura de software.",
+        "Formación universitaria en fundamentos de algoritmos, estructuras de datos y arquitectura de software, con especialidad en inteligencia artificial y ciencia de datos.",
       technologies: [
         "Inteligencia Artificial",
         "Ciencia de Datos",
@@ -36,7 +35,7 @@ const Experience = () => {
       title: "Egresado | Técnico Superior",
       company: "CERTUS",
       period: "2021 - 2024",
-      description: "Formación técnica en Diseño y Desarrollo de Software",
+      description: "Formación técnica en Diseño y Desarrollo de Software.",
       technologies: [
         "Desarrollo web",
         "Aplicaciones moviles",

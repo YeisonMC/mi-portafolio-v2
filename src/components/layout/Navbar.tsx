@@ -8,7 +8,6 @@ const navLinks = [
   { name: "Experiencia", id: "experience" },
   { name: "Habilidades", id: "skills" },
   { name: "Proyectos", id: "projects" },
-  // { name: "Contacto", id: "contact" },
 ];
 
 const Navbar = () => {
@@ -130,14 +129,14 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "tween" }}
-            className="fixed inset-0 bg-amber-100 z-40 flex flex-col items-center justify-center gap-8 md:hidden"
+            className="fixed inset-0 bg-white z-40 flex flex-col items-center justify-center gap-8 md:hidden"
           >
             {navLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className={`text-2xl font-bold ${
-                  activeSection === link.id ? "text-orange-500" : "text-white"
+                className={`text-2xl font-semibold cursor-pointer ${
+                  activeSection === link.id ? "text-orange-500" : "text-black"
                 }`}
               >
                 {link.name}

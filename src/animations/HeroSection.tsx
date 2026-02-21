@@ -58,7 +58,7 @@ const HeroSection = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="grid lg:grid-cols-2 gap-12 items-center"
+          className="grid lg:grid-cols-2 gap-12 items-center max-lg:mt-4"
         >
           {/* Left Content */}
           <div className="space-y-6">
@@ -112,7 +112,7 @@ const HeroSection = () => {
                 <FaArrowRightLong className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="CV - YEISSEN MACALUPU - DESARROLLADOR - 202502.pdf"
+                href="CV - YEISSEN MACALUPU - DESARROLLADOR - 202601.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary group"

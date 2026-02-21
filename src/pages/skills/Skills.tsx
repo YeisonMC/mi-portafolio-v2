@@ -6,7 +6,6 @@ const Skills = () => {
     {
       name: "HTML5",
       category: "Desarrollo Web",
-      // icon: <SiHtml5 className="w-8 h-8" />,
       icon: "https://res.cloudinary.com/dtsfiwmzt/image/upload/v1770251792/html-5_wtkpgj.svg",
       color: "from-[#A9725C] to-[#8B5E4A]",
     },
@@ -30,7 +29,7 @@ const Skills = () => {
     },
     {
       name: "React",
-      category: "Backend Web",
+      category: "Desarrollo Web",
       icon: "https://res.cloudinary.com/dtsfiwmzt/image/upload/v1769645700/react_inzxcq.svg",
       color: "from-[#8B5E4A] to-[#C89580]",
     },
@@ -42,7 +41,7 @@ const Skills = () => {
     },
     {
       name: "Tailwind",
-      category: "Backend Web",
+      category: "Desarrollo Web",
       icon: "https://res.cloudinary.com/dtsfiwmzt/image/upload/v1769645700/tailwind_pbczz6.svg",
       color: "from-[#8B5E4A] to-[#C89580]",
     },
