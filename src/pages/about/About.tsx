@@ -174,7 +174,7 @@ const About = () => {
                     Carrera
                   </span>
                   <span className="text-gray-900 font-semibold">
-                    Computación
+                    Ciencias de la Computación
                   </span>
                 </div>
 

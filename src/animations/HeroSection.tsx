@@ -1,12 +1,13 @@
 import { motion, type Variants } from "framer-motion";
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
-
 import { FaArrowRightLong, FaFolderClosed } from "react-icons/fa6";
 
 import "@fontsource/raleway/400.css";
 import "@fontsource/raleway/500.css";
 import "@fontsource/raleway/600.css";
 import "@fontsource/raleway/700.css";
+
+import "../styles/rounded.css";
 
 const HeroSection = () => {
   const containerVariants: Variants = {
@@ -90,10 +91,9 @@ const HeroSection = () => {
                 />
               </span>
             </motion.h2>
-
             <motion.p
               variants={itemVariants}
-              className="text-lg text-gray-600 leading-relaxed max-w-2xl text-justify"
+              className="text-lg text-gray-600 leading-relaxed md:w-10/12 text-justify"
             >
               Técnico Superior en Diseño y Desarrollo de Software con 2 años de
               experiencia. Actualmente estudiando Ciencias de la Computación en
@@ -154,7 +154,15 @@ const HeroSection = () => {
           </div>
 
           {/* Rigth Content */}
-          <div className=""></div>
+          <motion.div variants={itemVariants} className="mx-auto">
+            <div className="rounded-home bg-[#A9725C] w-90 h-90 overflow-hidden flex items-end justify-center">
+              <img
+                src="https://assets-global.website-files.com/64c73d04a946980a4476537e/64d454ec3583c11cf926ec6f_Jumping.svg"
+                alt="Persona saltando"
+                className="md:w-80 w-80 animate-float"
+              />
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>

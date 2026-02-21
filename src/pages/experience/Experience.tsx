@@ -9,24 +9,8 @@ const Experience = () => {
       period: "2026",
       description:
         "Desarrollo diversos proyectos, incluyendo landing pages, aplicaciones web y sistemas web.",
-      technologies: ["React", "Node.js", "Express", "MongoDB"],
+      technologies: ["React", "Node.js", "Express", "MongoDB", "WordPress"],
     },
-    // {
-    //   title: "Freelancer | Desarrollador FullStack",
-    //   company: "Proyectos Independientes",
-    //   period: "2025",
-
-    //   description:
-    //     // "2 años de experiencia desarrollando aplicaciones web completas y escalables.",
-    //     "Desarrollo diversos proyectos, incluyendo landing pages, aplicaciones web y sistemas web.",
-    //   technologies: [
-    //     "React",
-    //     "Node.js",
-    //     "MongoDB",
-    //     "PostgreSQL",
-    //     "Tailwind CSS",
-    //   ],
-    // },
     {
       title: "Estudiante de Ciencias de la Computación",
       company: "Universidad de Ciencias Aplicadas (UPC)",
@@ -35,48 +19,32 @@ const Experience = () => {
       description:
         "Profundizando conocimientos en algoritmos, estructuras de datos y arquitectura de software.",
       technologies: [
-        "React",
-        "Node.js",
-        "MongoDB",
-        "PostgreSQL",
-        "Tailwind CSS",
+        "Inteligencia Artificial",
+        "Ciencia de Datos",
+        "Desarrollo de Software",
       ],
     },
     {
       title: "Desarrollador Frontend",
       company: "Centro GZA InfraVial Perú",
       period: "Marzo - Junio | 2023",
-
       description:
-        // "2 años de experiencia desarrollando aplicaciones web completas y escalables.",
-        "Desarrollo diversos proyectos, incluyendo landing pages, aplicaciones web y sistemas web.",
-      technologies: [
-        "React",
-        "Node.js",
-        "MongoDB",
-        "PostgreSQL",
-        "Tailwind CSS",
-      ],
+        "Diseñé e implementé interfaces web responsivas para una plataforma de formación técnica en infraestructura vial, desarrollando secciones como catálogo de cursos y landing pages del sitio web principal.",
+      technologies: ["Spring", "PostgreSQL", "Tailwind CSS"],
     },
     {
       title: "Egresado | Técnico Superior",
       company: "CERTUS",
       period: "2021 - 2024",
-
-      description: "Graduado en Diseño y Desarrollo de Software con honores.",
-      technologies: ["React", "TypeScript", "CSS3", "Redux"],
+      description: "Formación técnica en Diseño y Desarrollo de Software",
+      technologies: [
+        "Desarrollo web",
+        "Aplicaciones moviles",
+        "Base datos",
+        "Aplicaciones web",
+      ],
     },
   ];
-
-  const containerVariants: Variants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.3,
-      },
-    },
-  };
 
   const containerVariants2: Variants = {
     hidden: { opacity: 0 },

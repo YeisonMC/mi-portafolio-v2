@@ -92,7 +92,7 @@ const Projects = () => {
             <motion.div
               key={project.title}
               variants={itemVariants}
-              className="group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 "
+              className="group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
             >
               {/* Project Image Container */}
               <div className="relative h-48 overflow-hidden bg-gray-200">
@@ -108,15 +108,7 @@ const Projects = () => {
                 />
 
                 {/* Hover Overlay with Action Buttons */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileHover={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 0.5,
-                    ease: "easeOut",
-                  }}
-                  className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20"
-                >
+                <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-out z-20">
                   {/* GitHub Link */}
                   <motion.a
                     href={project.github}
@@ -144,7 +136,7 @@ const Projects = () => {
                   >
                     <FiExternalLink className="w-6 h-6 text-gray-900" />
                   </motion.a>
-                </motion.div>
+                </div>
               </div>
 
               {/* Project Content */}
