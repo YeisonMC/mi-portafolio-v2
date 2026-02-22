@@ -246,7 +246,7 @@ const Skills = () => {
                   {/* Icon */}
                   <div
                     className={`w-15 h-15 mb-4 transform group-hover:rotate-6 transition-transform duration-300`}
-                    // className={`w-16 h-16 rounded-2xl bg-linear-to-br ${skill.color} flex items-center justify-center text-white mb-6 shadow-lg transform group-hover:rotate-6 transition-transform duration-300`}
+                    // className={`w-16 h-16 rounded-2xl bg-linear-to-br  ${skill.color} flex items-center justify-center text-white mb-6 shadow-lg transform group-hover:rotate-6 transition-transform duration-300`}
                   >
                     <img src={skill.icon} alt={`${skill.name}-icon`} />
                   </div>
