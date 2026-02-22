@@ -4,6 +4,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Evitar desplazamiento horizontal inesperado en móviles */
+html,
+body {
+  overflow-x: hidden;
+}
+
 @theme {
   --color-primary: #a9725c;
 }
