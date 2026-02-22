@@ -69,7 +69,7 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <section className="min-h-screen" id="about">
       <div className="section-container">
         {/* Header */}
         <motion.div
@@ -224,7 +224,11 @@ const About = () => {
                 className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 text-center cursor-pointer"
               >
                 <div className="text-5xl mb-4">
-                  <img src={cert.icon} alt="" className="w-22 h-22 mx-auto" />
+                  <img
+                    src={cert.icon}
+                    alt={`Icono de ${cert.name}`}
+                    className="w-22 h-22 mx-auto"
+                  />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   {cert.name}
@@ -235,7 +239,7 @@ const About = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

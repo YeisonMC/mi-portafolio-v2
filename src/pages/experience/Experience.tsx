@@ -68,7 +68,7 @@ const Experience = () => {
     },
   };
   return (
-    <div className="min-h-screen">
+    <section className="min-h-screen" id="experience">
       <div className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -163,7 +163,7 @@ const Experience = () => {
           ))}
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

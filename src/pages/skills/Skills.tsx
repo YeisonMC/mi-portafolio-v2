@@ -115,7 +115,7 @@ const Skills = () => {
   };
 
   return (
-    <div className="min-h-screen">
+    <section className="min-h-screen" id="skills">
       <div className="section-container">
         {/* Header */}
         <motion.div
@@ -268,7 +268,7 @@ const Skills = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

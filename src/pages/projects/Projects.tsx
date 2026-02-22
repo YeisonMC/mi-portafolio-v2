@@ -53,7 +53,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <section className="min-h-screen" id="projects">
       <div className="section-container">
         {/* Header Section */}
         <motion.div
@@ -103,7 +103,7 @@ const Projects = () => {
                 {/* Project Image */}
                 <img
                   src={project.image}
-                  alt={project.title}
+                  alt={`Proyecto de ${project.title}`}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
 
@@ -172,7 +172,7 @@ const Projects = () => {
           ))}
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

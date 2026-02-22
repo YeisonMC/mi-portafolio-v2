@@ -88,7 +88,7 @@ const Navbar = () => {
           >
             <img
               src="https://res.cloudinary.com/dtsfiwmzt/image/upload/v1767752258/logo-name-header-YKTrYP3W_1_go1ic7.svg"
-              alt=""
+              alt="Logo personal"
               className="w-20"
             />
           </button>
@@ -128,6 +128,7 @@ const Navbar = () => {
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden text-black text-2xl z-50 cursor-pointer"
+            aria-label={isMobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
           >
             {isMobileMenuOpen ? <FiX /> : <FiMenu />}
           </button>
