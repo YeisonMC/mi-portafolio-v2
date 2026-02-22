@@ -51,20 +51,22 @@ const Navbar = () => {
   }, [isMobileMenuOpen]);
 
   const scrollToSection = (id: string) => {
-    setIsMobileMenuOpen(false); // Cerrar menú móvil si está abierto
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = 80; // Altura del Navbar para que no tape el título
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
+    setIsMobileMenuOpen(false);
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
+    // Esperamos a que el overlay cierre antes de calcular posición
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      if (element) {
+        const offset = 80;
+        const elementPosition =
+          element.getBoundingClientRect().top + window.scrollY;
+
+        window.scrollTo({
+          top: elementPosition - offset,
+          behavior: "smooth",
+        });
+      }
+    }, 50); // 50ms es suficiente para que AnimatePresence desmonte el overlay - 300  para baja gama
   };
   return (
     <>
@@ -112,11 +114,10 @@ const Navbar = () => {
                     <motion.div
                       layoutId="navbar-underline"
                       className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#A9725C] shadow-[0_0_10px_rgba(249,115,22,0.5)]"
-                      // "shadow-[0_0_10px_rgba(169,114,92,0.4)]"
                       transition={{
                         type: "spring",
                         stiffness: 300,
-                        damping: 30,
+                        damping: 40,
                       }}
                     />
                   )}
@@ -141,18 +142,22 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "tween" }}
+            // transition={{ type: "spring", stiffness: 300, damping: 30 }}
             className="fixed inset-0 bg-white z-40 flex flex-col items-center justify-center gap-8 md:hidden"
           >
-            {navLinks.map((link) => (
-              <button
+            {navLinks.map((link, index) => (
+              <motion.button
                 key={link.id}
+                initial={{ opacity: 0, x: 30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: index * 0.1, duration: 0.5 }}
                 onClick={() => scrollToSection(link.id)}
                 className={`text-2xl font-semibold font-[Raleway] cursor-pointer ${
                   activeSection === link.id ? "text-[#A9725C]" : "text-black"
                 }`}
               >
                 {link.name}
-              </button>
+              </motion.button>
             ))}
           </motion.div>
         )}
