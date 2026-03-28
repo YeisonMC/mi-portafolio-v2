@@ -50,6 +50,29 @@ const Projects = () => {
       github: "https://github.com/YeisonMC",
       demo: "https://frontend-modamarket.vercel.app/",
     },
+    {
+      title: "Taza 21- Landing Page",
+      description:
+        "Landing page con la tematica de cafe, con un diseño moderno y responsive.",
+      image:
+        "https://res.cloudinary.com/dtsfiwmzt/image/upload/v1774664951/Taza_21_g7nyj2.svg",
+      technologies: [
+        {
+          name: "Vite",
+          icon: "https://res.cloudinary.com/dtsfiwmzt/image/upload/v1769645700/vite_kuse9u.svg",
+        },
+        {
+          name: "React",
+          icon: "https://res.cloudinary.com/dtsfiwmzt/image/upload/v1769645700/react_inzxcq.svg",
+        },
+        {
+          name: "Tailwind CSS",
+          icon: "https://cdn.worldvectorlogo.com/logos/tailwindcss.svg",
+        },
+      ],
+      github: "https://github.com/YeisonMC",
+      demo: "https://taza-21.vercel.app/",
+    },
   ];
 
   return (
