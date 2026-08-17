@@ -31,18 +31,18 @@ const Experience = () => {
         "Diseñé e implementé interfaces web responsivas para una plataforma de formación técnica en infraestructura vial, desarrollando secciones como catálogo de cursos y landing pages del sitio web principal.",
       technologies: ["Spring", "PostgreSQL", "Tailwind CSS"],
     },
-    {
-      title: "Egresado | Técnico Superior",
-      company: "CERTUS",
-      period: "2021 - 2024",
-      description: "Formación técnica en Diseño y Desarrollo de Software.",
-      technologies: [
-        "Desarrollo web",
-        "Aplicaciones moviles",
-        "Base datos",
-        "Aplicaciones web",
-      ],
-    },
+    // {
+    //   title: "Egresado | Técnico Superior",
+    //   company: "CERTUS",
+    //   period: "2021 - 2024",
+    //   description: "Formación técnica en Diseño y Desarrollo de Software.",
+    //   technologies: [
+    //     "Desarrollo web",
+    //     "Aplicaciones moviles",
+    //     "Base datos",
+    //     "Aplicaciones web",
+    //   ],
+    // },
   ];
 
   const containerVariants2: Variants = {

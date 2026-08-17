@@ -73,6 +73,37 @@ const Projects = () => {
       github: "https://github.com/YeisonMC",
       demo: "https://taza-21.vercel.app/",
     },
+    {
+      title: "Recomendaciones Profesores UPC",
+      description:
+        "Pagina web para recomendar profesores de UPC, es un entorno completamente anonimo y con la finalidad de ayudar a los estudiantes antes de matricularse a algun curso.",
+      image:
+        "https://res.cloudinary.com/dtsfiwmzt/image/upload/v1786941009/Recomendaciones_de_profesores_UPC_basf0r.png",
+      technologies: [
+        {
+          name: "Vite",
+          icon: "https://res.cloudinary.com/dtsfiwmzt/image/upload/v1769645700/vite_kuse9u.svg",
+        },
+        {
+          name: "React",
+          icon: "https://res.cloudinary.com/dtsfiwmzt/image/upload/v1769645700/react_inzxcq.svg",
+        },
+        {
+          name: "Tailwind CSS",
+          icon: "https://cdn.worldvectorlogo.com/logos/tailwindcss.svg",
+        },
+        {
+          name: "Node JS",
+          icon: "https://res.cloudinary.com/dtsfiwmzt/image/upload/v1770251545/node_epxjbw.svg",
+        },
+        {
+          name: "Mongo DB",
+          icon: "https://res.cloudinary.com/dtsfiwmzt/image/upload/v1771282718/mongo_gmw1gc.svg",
+        },
+      ],
+      github: "https://github.com/YeisonMC",
+      demo: "https://recomienda-profe-upc-frontend.vercel.app/",
+    },
   ];
 
   return (

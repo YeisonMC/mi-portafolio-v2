@@ -93,9 +93,10 @@ const Home = () => {
               variants={itemVariants}
               className="text-lg text-gray-600 leading-relaxed md:w-10/12 text-justify"
             >
-              Técnico Superior en Diseño y Desarrollo de Software con 2 años de
-              experiencia. Actualmente estudiando Ciencias de la Computación en
-              la UPC.
+              Estudiante de Ingeniería de Ciencias de la Computación en la
+              Universidad Peruana de Ciencias Aplicadas (UPC), con experiencia
+              práctica como desarrollador Frontend y Backend en empresas reales
+              y en proyectos propios, usando el Stack MERN.
             </motion.p>
 
             <motion.div
