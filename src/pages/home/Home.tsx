@@ -111,7 +111,7 @@ const Home = () => {
                 <FaArrowRightLong className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="CV - YEISSEN MACALUPU - DESARROLLADOR - 202601.pdf"
+                href="CV - YEISSEN MACALUPU - DESARROLLADOR - 202602.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary group"
